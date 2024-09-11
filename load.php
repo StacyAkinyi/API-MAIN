@@ -19,5 +19,6 @@ spl_autoload_register('classAutoLoad');
 $Objlayout = new layout();
 $ObjMenus = new menus();
 $Objheadings = new headings();
+$ObjContents= new contents();
 
 ?>
