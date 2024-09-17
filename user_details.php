@@ -1,6 +1,6 @@
 <?php
-class fnc{
 
+class user_details{
     var $fname;
     public $username;
     var $yob;
@@ -9,15 +9,10 @@ class fnc{
 
     public function computer_user($fname){
         return $fname;
-
     }
 
-    public function user_age($fname, $yob){
-        $age=date('Y') - $yob;
-        return $fname.' is '. $age;
-
+    public function user_age($name, $yob){
+        $age = date('Y') - $yob;
+        return $name . " is " . $age;
     }
-
 }
-
-?>

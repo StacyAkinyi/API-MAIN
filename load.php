@@ -14,6 +14,11 @@ function classAutoLoad($classname){
 
 spl_autoload_register('classAutoLoad');
 
+
+
+
+
+
 //Create instance of all classes
 
 $Objlayout = new layout();
@@ -22,3 +27,8 @@ $Objheadings = new headings();
 $ObjContents= new contents();
 
 ?>
+
+//require "includes/constants.php";
+//require "includes/dbConnection.php";
+
+//$conn = new dbConnection(DBTYPE, HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
