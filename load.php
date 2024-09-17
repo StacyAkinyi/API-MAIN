@@ -15,7 +15,10 @@ function classAutoLoad($classname){
 spl_autoload_register('classAutoLoad');
 
 
+//require "includes/constants.php";
+//require "includes/dbConnection.php";
 
+//$conn = new dbConnection(DBTYPE, HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
 
 
 
@@ -28,7 +31,3 @@ $ObjContents= new contents();
 
 ?>
 
-//require "includes/constants.php";
-//require "includes/dbConnection.php";
-
-//$conn = new dbConnection(DBTYPE, HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);

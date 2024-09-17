@@ -22,4 +22,46 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
         <?php
     }
+ 
+    public function signup_form(){
+        ?>
+        <head>
+            
+            <link rel = "stylesheet" href="css\signup.css"/>
+        </head>
+        <div class="container">
+            <form action="sql_signup.php" method="post"> 
+                <div class="form-group"> 
+                    <h2>Sign-Up Form</h2>
+
+                    <div class="signup"> 
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required><br><br>
+                    </div>
+
+                    <div class="signup">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required><br><br>
+                    </div>
+
+                    <div class="signup">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+
+                    <div class="signup">
+                        <label for="password">Password:</label><br> 
+                        <input type="password" id="password" name="password" required><br><br>
+                    </div>
+
+                    <div class="signup">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </div> 
+            </form>  
+        </div>
+        <?php
+    }
 }
+?>
